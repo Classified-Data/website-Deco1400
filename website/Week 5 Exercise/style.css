@@ -1,0 +1,225 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    /* Turns off padding adding to width/height */
+}
+
+body {
+    margin: 3em;
+    font-size: 18px;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: white;
+}
+
+header,
+nav,
+#contact-form,
+footer {
+    background: #eee;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+a {
+    color: darkorange;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: black;
+}
+
+
+/* Header */
+
+header h1 {
+    font-family: Gugi, sans-serif;
+}
+
+
+/* Table of Contents */
+
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    border-bottom: 2px solid #999;
+    padding: 0.5em 0;
+}
+
+nav li:last-of-type {
+    border-bottom: 0;
+}
+
+
+/* Chapters */
+
+#chapters article {
+    overflow: hidden;
+    /* To clear the floated image */
+    border: 2px solid #888;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+#chapters article p:first-of-type {
+    font-size: 1.25em;
+}
+
+#chapters article p:first-of-type:first-letter {
+    float: left;
+    font-family: Gugi, sans-serif;
+    font-size: 3em;
+    color: darkorange;
+    margin-top: -0.3em;
+    margin-right: 0.1em;
+}
+
+#chapters article p:last-of-type a {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#chapters article>h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#chapters article>h2:before,
+#chapters article>h2:after {
+    content: "\2605";
+    color: darkorange;
+}
+
+#chapters article>h2:before {
+    padding-right: 1em;
+}
+
+#chapters article>h2:after {
+    padding-left: 1em;
+}
+
+figure {
+    max-width: 200px;
+    border: 2px solid #999;
+    margin: 0;
+    padding: 0.75em;
+    margin-bottom: 1em;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #888;
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#chapter-1 figure {
+    float: left;
+    margin-right: 1em;
+}
+
+#chapter-2 figure {
+    float: right;
+    margin-left: 1em;
+}
+
+
+/* Form */
+
+fieldset {
+    margin-bottom: 2em;
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    display: block;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5em 1em;
+    margin: 0 -1em;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+fieldset .form-item {
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+fieldset .form-item>label {
+    font-weight: bold;
+    width: 25%;
+    padding-right: 2em;
+    text-align: right;
+    text-shadow: rgba(0, 0, 0, 0.3) 3px 3px 5px;
+}
+
+fieldset .form-item .form-element {
+    width: 75%;
+}
+
+fieldset .form-item .form-element>label {
+    display: block;
+}
+
+input[type=text],
+textarea {
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+input[type=text]:focus {
+    border-color: #2cb5e8;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-right: 1em;
+}
+
+select {
+    font-size: 1em;
+}
+
+button {
+    font-weight: bold;
+    font-size: 1.3em;
+    background: black;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, red, orange);
+    cursor: pointer;
+    float: right;
+}

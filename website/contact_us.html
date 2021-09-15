@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/script.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+
+<body>
+
+
+    <nav id="navigation_bar">
+        <ul>
+            <a href="index.html">Homepage</a>
+        </ul>
+        <ul>
+            <a href="disorders.html">Disorders</a>
+        </ul>
+        <ul>
+            <a href="characters.html">Characters</a>
+        </ul>
+        <ul class="current">
+            <a href="contact_us.html">Contact Us</a>
+        </ul>
+        <ul>
+            <a href="acknowledgements.html">Acknowledgements</a>
+        </ul>
+    </nav>
+
+
+    <header id="header">
+        <h1>Contact Us</h1>
+        <figure id="logo">
+            <!--<img src="images/alice_large.png" alt="Alice">-->
+        </figure>
+        <h2>We value your feedback and review!</h2>
+    </header>
+
+    <section id="form">
+        <section id="layout">
+
+            <h2>Leave your feedback:</h2>
+            <fieldset>
+                <div class="form-item">
+                    <label for="comments">General Comments:</label>
+                    <div class="comments">
+                        <textarea id="comments" name="comments " rows="10 " placeholder="Enter your feedback here:"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label>Who is Your favourite character?</label>
+                    <div class="form-element">
+                        <label for="form_favourite_alice">
+                        <input type="checkbox" id="favourite_alice" name="favourite[]"> Alice
+                </label>
+                        <label for="form_favourite_hatter">
+                        <input type="checkbox" id="favourite_hatter" name="favourite[]"> Mad Hatter
+                </label>
+                        <label for="form_favourite_red_queen">
+                        <input type="checkbox" id="favourite_red_queen" name="favourite[]"> Red Queen
+                </label>
+                        <label for="form_favourite_rabbit">
+                    <input type="checkbox" id="favourite_rabbit" name="favourite[]"> White Rabbit
+                </label>
+                        <label for="form_favourite_mouse">
+                    <input type="checkbox" id="favourite_mouse" name="favourite[]"> Door Mouse
+                </label>
+                    </div>
+                </div>
+                Your text here
+                <div class="form-item">
+                    <label for="form-state">What other characters would you like to see mentioned?:</label>
+                    <div class="form-element">
+                        <select name="" class="select_name">
+                                <option>Tweedledum and Tweedledee</option>
+                                <option>White King</option>
+                                <option>Caterpillar</option>
+                                <option>Mock Turtle</option>
+                                <option>Dodo</option>
+                    </select>
+                    </div>
+                </div>
+                <button type="submit" href="contact_us.html">Submit</button>
+            </fieldset>
+        </section>
+    </section>
+
+    <footer id="page-footer">
+        <ul>
+            <li class="footer">
+                <a href="contact_us.html">Contact Us</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

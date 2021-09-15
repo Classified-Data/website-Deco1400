@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background: white;
+    color: black;
+}
+
+
+/* Main Menu */
+
+#main-menu {
+    background-color: #888;
+}
+
+#main-menu ul {
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+#main-menu li {
+    list-style: none;
+    padding: 0.1em 0.5em;
+}
+
+#main-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+}
+
+#main-menu a:hover {
+    background: #aaa;
+}
+
+#main-menu li.current a {
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
+
+/* Page Header */
+
+#page-header {
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+#page-header .banner-title {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#page-header #logo {
+    padding-top: 5%;
+}
+
+#page-header #logo img {
+    max-width: 100px;
+}
+
+#page-header h1 {
+    font-weight: 300;
+    font-size: 3em;
+    line-height: 1em;
+    padding: 0.1em 1em 0 1em;
+    color: darkblue;
+}
+
+#page-header p {
+    padding: 1em 1em 10% 1em;
+}
+
+#page-header .cta-button {
+    text-align: center;
+    padding: 10% 0;
+}
+
+#page-header .cta-button a {
+    display: inline-block;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    box-shadow: inset rgba(0, 0, 255, 0.5) 0 2px 1px, inset rgba(0, 0, 0, 0.3) 0 -2px 1px;
+}
+
+#page-header .cta-button a:hover {
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+body.page-overview #page-header {
+    background-image: url(images/background-overview.jpg);
+}
+
+body.page-about-us #page-header {
+    background-image: url(images/background-about-us.jpg);
+}
+
+
+/* Main Content */
+
+#main-content,
+#features,
+#testimonials {
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+#features>h2,
+#testimonials>h2 {
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#main-content {
+    background: #eee;
+}
+
+#main-content h2 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+#main-content p {
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.read-more {
+    width: 100%;
+    padding-top: 1em;
+}
+
+.read-more a {
+    float: right;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.read-more a:after {
+    content: ">";
+    margin-left: 0.5em;
+}
+
+
+/* Features */
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#features article {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100px;
+    padding-bottom: 1.5em;
+    padding-top: 130px !important;
+}
+
+#features article h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#features article>p {
+    margin-bottom: 1em;
+    color: #777;
+}
+
+#features .stats>p {
+    margin-bottom: 1em;
+    font-size: 0.9em;
+}
+
+#features article.features-performance {
+    background-image: url(images/icon-stopwatch.png);
+}
+
+#features article.features-range {
+    background-image: url(images/icon-battery.png);
+}
+
+
+/* Testimonials */
+
+#testimonials {
+    background: black;
+    color: white;
+}
+
+#testimonials article {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#testimonials article figure {
+    width: 50%;
+    padding-bottom: 1.5em;
+}
+
+#testimonials article img {
+    border-radius: 100%;
+    max-width: 100%;
+}
+
+#testimonials .quote {
+    width: 100%;
+}
+
+#testimonials .quote h3 {
+    color: #999;
+    margin-bottom: 1em;
+}
+
+#testimonials .quote blockquote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#testimonials .quote blockquote:before {
+    content: "\201C";
+    font-size: 2em;
+    margin-right: 0.2em;
+    position: relative;
+    top: 10px;
+}
+
+#testimonials .read-more a {
+    color: white;
+}
+
+
+/* Page Footer */
+
+#page-footer {
+    padding: 1.5em;
+    text-transform: uppercase;
+}
+
+#secondary-menu li {
+    list-style: none;
+}
+
+#secondary-menu a {
+    color: #999;
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5em;
+    }
+    /* Main Menu */
+    #main-menu ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        text-align: left;
+    }
+    #main-menu li {
+        padding: 0.75em 0.5em;
+    }
+    /* Page Header */
+    #page-header {
+        min-height: 80vh;
+    }
+    #page-header h1 {
+        font-size: 4em;
+    }
+    /* Main Content */
+    #main-content,
+    #features,
+    #testimonials {
+        padding: 3em;
+    }
+    /* Features */
+    #features article {
+        width: 30%;
+        padding: 2em 5em;
+    }
+    /* Testimonials */
+    #testimonials article {
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+    #testimonials article figure {
+        width: 20%;
+        padding: 0;
+        padding-right: 3em;
+    }
+    #testimonials .quote {
+        width: 80%;
+    }
+    /* Page Footer */
+    #page-footer {
+        padding: 1.5em 3em;
+    }
+    #secondary-menu ul {
+        display: flex;
+    }
+    #secondary-menu li {
+        padding: 0;
+        padding-right: 1.5em;
+    }
+}
